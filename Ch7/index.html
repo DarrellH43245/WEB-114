@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<!--Darrell Holtz 4-22-2025-->
+<html lang="en">
+    <head>
+        <title>Functions Project</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <h1>
+        What is the purpose of a function?
+        </h1>
+        <h2>
+        The purpose of a function is to reuse code within a program for a specific reason.
+        </h2>
+        <script>
+        'use strict';
+
+        let username = prompt('Enter your name');
+        let gas = calcGasAvg();
+        confirm(username + "'s average weekly gas bill is " + gas.toFixed(2));
+
+        function calcGasAvg() {
+
+            let count = 0;
+            let total = 0;
+            let weeklyGas = 0;
+
+            while (weeklyGas !== -1){
+                weeklyGas = parseFloat(prompt('Enter your weekly gas total. Enter -1 when you are done.'));
+
+                if(weeklyGas !== -1) {
+                    total += weeklyGas;
+                    count++;
+                }
+            }            
+        
+            return total / count;
+        }
+
+
+
+        </script>
+    </body>
+</html>
