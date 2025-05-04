@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<!--Darrell Holtz 5-4-2025-->
+<html lang="en">
+    <head>
+        <title>To Do List</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <h1>
+        Why is the JavaScript textContent property safer than innerHTML
+        </h1>
+        <h2>
+        textContent looks for ways to only change the text in an element, innerHTML replaces all of the HTML including tags.
+        </h2>
+        <h1>
+        Explain the relationship between an HTML attribute and a corresponding DOM property (explain the connection to JavaScript).
+        Use a specific example in your answer.
+        </h1>
+        <h2>
+        HTML atrributes contain the values in the source file that's loaded by the browser. DOM properties are the browsers rendering of the HTML.
+        JavaScript doesn't modify the original HTML. Instead, it updates the DOM directly in the browser.
+
+        Example: changing the text of a button from "open" to "close". The original HTML would still have the value as "open",
+        but the dom would now display "close" as the button text.
+        </h2>
+        <hr>
+        <h1>
+        To-Do List
+        </h1>
+        <input type="text" id="taskInput">
+        <button type="button" id="addTaskBtn">Add Task</button>
+        <ul id="taskList"></ul>
+        <script src="todo.js">
+        </script>
+    </body>
+</html>
