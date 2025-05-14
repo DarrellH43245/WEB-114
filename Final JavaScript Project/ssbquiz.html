@@ -1,0 +1,77 @@
+<!DOCTYPE HTML>
+<!--Darrell Holtz 5-12-2025-->
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="pagedesign.css">
+        <title>Smash Bros Quiz</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <div id="questionDiv" style="display: block;">
+            <p>
+                <span id="questionNumberSpan"></span>
+                <span id="questionTextSpan"></span>
+            </p>
+            <p>
+                <input type="radio" name="quizAnswers" value="A" onclick="enableNextButton()">
+                <span>A. </span>
+                <span id="answerTextA"></span>
+            </p>
+            <p>
+                <input type="radio" name="quizAnswers" value="B" onclick="enableNextButton()">
+                <span>B. </span>
+                <span id="answerTextB"></span>
+            </p>
+            <p>
+                <input type="radio" name="quizAnswers" value="C" onclick="enableNextButton()">
+                <span>C. </span>
+                <span id="answerTextC"></span>
+            </p>
+            <p>
+                <input type="radio" name="quizAnswers" value="D" onclick="enableNextButton()">
+                <span>D. </span>
+                <span id="answerTextD"></span>
+            </p>
+            <p>
+                <button type="button" id="nextButton" disabled onclick="nextButtonClick()">Next</button>
+            </p>
+        </div>
+        <div id="gradeDiv" style="display: none;">
+            <p>
+                Total Correct
+            </p>
+            <p>
+                Your Score:
+                <span id="scoreSpan"></span>
+                / 10
+            </p>
+            <table id="gradeTable">
+                <tbody>
+                    <tr>
+                        <td>
+                            #
+                        </td>
+                        <td>
+                            Your Answer
+                        </td>
+                        <td>
+                            Correct Answer
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p>
+                <button type="button" onclick="location.reload()">Try Again?</button>
+            </p>
+            <p>
+                <small>
+                Darrell Holtz, 5/13/2025. Thanks for taking my randomized Super Smash Bros Quiz!
+                I encourage you to keep trying until you got them all correct. If you have though:
+                congratulations, you are an avid smash bros fan!
+                </small>
+            </p>
+        </div>
+        <script src="quiztemplate.js">
+        </script>
+    </body>
+</html>
